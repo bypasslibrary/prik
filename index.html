@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zvuk Prank</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: #0b0e14;
+      color: #eaeaf0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* ===== КНОПКИ ===== */
+    .buttons {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 24px;
+      max-width: 900px;
+      width: 100%;
+      padding: 0 20px;
+    }
+
+    .btn {
+      width: 100%;
+      padding: 28px 0;
+      font-size: 22px;
+      border-radius: 18px;
+      border: none;
+      cursor: pointer;
+      background: linear-gradient(135deg, #4c8dff, #7fb6ff);
+      color: #fff;
+      box-shadow: 0 0 35px rgba(90,160,255,0.45);
+      transition: transform .2s ease, box-shadow .2s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-3px) scale(1.03);
+      box-shadow: 0 0 40px rgba(120,180,255,0.7);
+    }
+
+    /* ===== TELEGRAM BOT ===== */
+    .telegram-bot {
+      position: fixed;
+      top: 16px;
+      right: 16px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      padding: 18px 22px;
+      background: rgba(20, 25, 40, 0.7);
+      backdrop-filter: blur(10px);
+      border-radius: 18px;
+      box-shadow: 0 0 30px rgba(0,0,0,0.45);
+      transform: scale(1.5);
+      transform-origin: top right;
+    }
+
+    .telegram-bot img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+    }
+
+    .telegram-bot a {
+      text-decoration: none;
+      color: #7fb6ff;
+      font-weight: 600;
+      padding: 8px 14px;
+      border-radius: 10px;
+      background: rgba(40,60,120,0.35);
+      transition: background .2s ease, box-shadow .2s ease;
+    }
+
+    .telegram-bot a:hover {
+      background: rgba(80,120,255,0.45);
+      box-shadow: 0 0 15px rgba(120,180,255,0.6);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- TELEGRAM BOT -->
+  <div class="telegram-bot">
+    <img src="icon.webp" alt="ZvukPrank" />
+    <a href="https://t.me/zvu4okbot" target="_blank">Наш TG bot ZvukPrank</a>
+  </div>
+
+  <!-- КНОПКИ -->
+  <div class="buttons">
+    <a href="https://zvok1" target="_blank"><button class="btn">Стоны</button></a>
+    <a href="https://zvok2" target="_blank"><button class="btn">Шум</button></a>
+    <a href="https://zvok3" target="_blank"><button class="btn">Турбина</button></a>
+  </div>
+
+</body>
+</html>
