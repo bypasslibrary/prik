@@ -84,6 +84,43 @@
       background: rgba(80,120,255,0.45);
       box-shadow: 0 0 15px rgba(120,180,255,0.6);
     }
+
+    /* ===== АДАПТАЦИЯ ПОД ТЕЛЕФОНЫ ===== */
+    @media (max-width: 768px) {
+      .buttons {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .telegram-bot {
+        transform: scale(1);
+        gap: 12px;
+        padding: 14px 16px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .buttons {
+        grid-template-columns: 1fr;
+      }
+
+      .telegram-bot {
+        right: 12px;
+        top: 12px;
+        padding: 12px 14px;
+      }
+
+      .telegram-bot a {
+        font-size: 14px;
+        padding: 6px 10px;
+      }
+    }
+    }
+
+    @media (max-width: 480px) {
+      .buttons {
+        grid-template-columns: 1fr;
+      }
+    }
   </style>
 </head>
 <body>
